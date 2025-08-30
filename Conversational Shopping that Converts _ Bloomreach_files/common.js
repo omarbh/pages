@@ -1,0 +1,2 @@
+function copyLink(){var copyLink=document.querySelectorAll('.copy-link');for(var i=0;i<copyLink.length;i++){copyLink[i].addEventListener("click",function(event){event.preventDefault();var link=window.location.href;navigator.clipboard.writeText(link);var tooltipContainer=this.parentNode;tooltipContainer.classList.add('visible');setTimeout(function(){tooltipContainer.classList.remove('visible')},1000)})}}
+copyLink()
